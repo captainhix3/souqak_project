@@ -1,0 +1,306 @@
+{
+  "dashboard": {
+    "title": "لوحة تحكم التاجر - سوقك",
+    "user": {
+      "name": "أحمد محمد",
+      "email": "ahmed@example.com",
+      "role": "تاجر",
+      "avatar": "https://via.placeholder.com/50",
+      "joinDate": "2024-01-15",
+      "status": "نشط"
+    },
+    "stats": {
+      "totalSales": {
+        "value": 124500,
+        "currency": "ج.م",
+        "change": "+12.5%",
+        "period": "هذا الشهر"
+      },
+      "totalOrders": {
+        "value": 235,
+        "change": "+8.3%",
+        "period": "هذا الشهر"
+      },
+      "totalProducts": {
+        "value": 2350,
+        "change": "+15.2%",
+        "period": "المنتجات النشطة"
+      },
+      "totalCustomers": {
+        "value": 1850,
+        "change": "+22.1%",
+        "period": "عملاء جدد"
+      }
+    },
+    "recentOrders": [
+      {
+        "id": "ORD-001",
+        "customer": "سارة أحمد",
+        "product": "ساعة ذكية Apple Watch",
+        "amount": 2499,
+        "status": "جديد",
+        "date": "2025-01-10",
+        "statusColor": "warning"
+      },
+      {
+        "id": "ORD-002",
+        "customer": "محمد علي",
+        "product": "هاتف Samsung Galaxy",
+        "amount": 15999,
+        "status": "قيد التجهيز",
+        "date": "2025-01-09",
+        "statusColor": "info"
+      },
+      {
+        "id": "ORD-003",
+        "customer": "فاطمة حسن",
+        "product": "لابتوب Dell XPS",
+        "amount": 25999,
+        "status": "تم الشحن",
+        "date": "2025-01-08",
+        "statusColor": "primary"
+      },
+      {
+        "id": "ORD-004",
+        "customer": "خالد محمود",
+        "product": "سماعات AirPods Pro",
+        "amount": 1899,
+        "status": "تم التسليم",
+        "date": "2025-01-07",
+        "statusColor": "success"
+      },
+      {
+        "id": "ORD-005",
+        "customer": "نور الدين",
+        "product": "كاميرا Canon EOS",
+        "amount": 45999,
+        "status": "ملغي",
+        "date": "2025-01-06",
+        "statusColor": "danger"
+      }
+    ],
+    "topProducts": [
+      {
+        "id": 1,
+        "name": "ساعة ذكية Apple Watch Series 9",
+        "sales": 45,
+        "revenue": 112455,
+        "image": "https://via.placeholder.com/60",
+        "category": "إلكترونيات"
+      },
+      {
+        "id": 2,
+        "name": "هاتف Samsung Galaxy S24 Ultra",
+        "sales": 32,
+        "revenue": 511968,
+        "image": "https://via.placeholder.com/60",
+        "category": "إلكترونيات"
+      },
+      {
+        "id": 3,
+        "name": "سماعات AirPods Pro الجيل الثاني",
+        "sales": 67,
+        "revenue": 127233,
+        "image": "https://via.placeholder.com/60",
+        "category": "إلكترونيات"
+      },
+      {
+        "id": 4,
+        "name": "لابتوب Dell XPS 13 الجديد",
+        "sales": 18,
+        "revenue": 467982,
+        "image": "https://via.placeholder.com/60",
+        "category": "إلكترونيات"
+      }
+    ],
+    "salesChart": {
+      "labels": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو"],
+      "data": [12000, 19000, 15000, 25000, 22000, 30000, 28000],
+      "backgroundColor": "#1E3A8A",
+      "borderColor": "#F97316"
+    },
+    "ordersChart": {
+      "labels": ["السبت", "الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة"],
+      "data": [12, 19, 15, 25, 22, 30, 28],
+      "backgroundColor": ["#1E3A8A", "#F97316", "#10B981", "#EF4444", "#8B5CF6", "#F59E0B", "#06B6D4"]
+    },
+    "notifications": [
+      {
+        "id": 1,
+        "title": "طلب جديد",
+        "message": "تم استلام طلب جديد من سارة أحمد",
+        "time": "منذ 5 دقائق",
+        "type": "order",
+        "read": false
+      },
+      {
+        "id": 2,
+        "title": "نفاد المخزون",
+        "message": "منتج 'ساعة ذكية Apple Watch' أوشك على النفاد",
+        "time": "منذ ساعة",
+        "type": "warning",
+        "read": false
+      },
+      {
+        "id": 3,
+        "title": "تقييم جديد",
+        "message": "حصلت على تقييم 5 نجوم من محمد علي",
+        "time": "منذ 3 ساعات",
+        "type": "review",
+        "read": true
+      },
+      {
+        "id": 4,
+        "title": "دفعة مالية",
+        "message": "تم تحويل 15,999 ج.م إلى حسابك",
+        "time": "منذ يوم",
+        "type": "payment",
+        "read": true
+      }
+    ],
+    "quickActions": [
+      {
+        "title": "إضافة منتج جديد",
+        "icon": "fas fa-plus",
+        "color": "success",
+        "action": "addProduct"
+      },
+      {
+        "title": "إدارة الطلبات",
+        "icon": "fas fa-shopping-bag",
+        "color": "primary",
+        "action": "manageOrders"
+      },
+      {
+        "title": "تقارير المبيعات",
+        "icon": "fas fa-chart-bar",
+        "color": "info",
+        "action": "salesReports"
+      },
+      {
+        "title": "إعدادات المتجر",
+        "icon": "fas fa-cog",
+        "color": "secondary",
+        "action": "storeSettings"
+      }
+    ],
+    "menuItems": [
+      {
+        "title": "لوحة التحكم",
+        "icon": "fas fa-tachometer-alt",
+        "url": "#dashboard",
+        "active": true
+      },
+      {
+        "title": "المنتجات",
+        "icon": "fas fa-box",
+        "url": "#products",
+        "active": false,
+        "submenu": [
+          {
+            "title": "جميع المنتجات",
+            "url": "#all-products"
+          },
+          {
+            "title": "إضافة منتج",
+            "url": "#add-product"
+          },
+          {
+            "title": "الفئات",
+            "url": "#categories"
+          }
+        ]
+      },
+      {
+        "title": "الطلبات",
+        "icon": "fas fa-shopping-cart",
+        "url": "#orders",
+        "active": false,
+        "badge": "5"
+      },
+      {
+        "title": "العملاء",
+        "icon": "fas fa-users",
+        "url": "#customers",
+        "active": false
+      },
+      {
+        "title": "التقارير",
+        "icon": "fas fa-chart-line",
+        "url": "#reports",
+        "active": false,
+        "submenu": [
+          {
+            "title": "تقارير المبيعات",
+            "url": "#sales-reports"
+          },
+          {
+            "title": "تقارير المنتجات",
+            "url": "#product-reports"
+          },
+          {
+            "title": "تقارير العملاء",
+            "url": "#customer-reports"
+          }
+        ]
+      },
+      {
+        "title": "المالية",
+        "icon": "fas fa-money-bill-wave",
+        "url": "#finance",
+        "active": false
+      },
+      {
+        "title": "الإعدادات",
+        "icon": "fas fa-cog",
+        "url": "#settings",
+        "active": false
+      }
+    ],
+    "recentActivity": [
+      {
+        "action": "تم إضافة منتج جديد",
+        "details": "ساعة ذكية Apple Watch Series 9",
+        "time": "منذ 2 ساعة",
+        "icon": "fas fa-plus-circle",
+        "color": "success"
+      },
+      {
+        "action": "تم تحديث حالة الطلب",
+        "details": "الطلب #ORD-002 - قيد التجهيز",
+        "time": "منذ 4 ساعات",
+        "icon": "fas fa-edit",
+        "color": "info"
+      },
+      {
+        "action": "تم استلام دفعة مالية",
+        "details": "15,999 ج.م من طلب #ORD-001",
+        "time": "منذ 6 ساعات",
+        "icon": "fas fa-money-bill",
+        "color": "success"
+      },
+      {
+        "action": "تقييم جديد",
+        "details": "5 نجوم على منتج 'هاتف Samsung'",
+        "time": "منذ 8 ساعات",
+        "icon": "fas fa-star",
+        "color": "warning"
+      }
+    ],
+    "settings": {
+      "storeName": "متجر أحمد للإلكترونيات",
+      "storeDescription": "متجر متخصص في بيع الأجهزة الإلكترونية والتقنية الحديثة",
+      "currency": "ج.م",
+      "language": "ar",
+      "timezone": "Africa/Cairo",
+      "notifications": {
+        "email": true,
+        "sms": false,
+        "push": true
+      },
+      "commission": 5.5,
+      "paymentMethods": ["instapay", "bank_transfer", "vodafone_cash", "cash_on_delivery"]
+    }
+  }
+}
+
